@@ -1,0 +1,35 @@
+<html>
+    
+    <form action="/ingredients" method="post">
+        <fieldset>
+            <legend>Add New Ingredients</legend>
+            <label for="ingredient-name">Name</label>
+            <input type="text" name="ingredient_name"><br>
+            <input type="submit" value="Submit" id="submit_ingredient">
+        </fieldset>
+    </form>
+
+    <form action="/ingredients" method="post">
+        <fieldset>
+            <legend>Search Ingredients</legend>
+            <label for="name"></label>
+            <input type="text" id="searchingredientname" name="searchingredientname"><br>
+            <input type="submit" value="Search">
+        </fieldset>
+    </form>
+    <h3>Search Results for {{searchingredientname}}</h3>
+    <table>
+        <thead>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            {{#each ingredients}}
+            <tr>
+                <td>{{searchingredientname}}</td>
+                <td><button>Delete</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+        
+    </table>
+</html>

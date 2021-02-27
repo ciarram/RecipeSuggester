@@ -1,0 +1,26 @@
+{
+  "name": "cs340_group96",
+  "version": "1.0.0",
+  "description": "A database backed website to enter ingredients you have in your kitchen and link them to recipes they can make with said ingredients.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BFWThomas/CS340_Group96.git"
+  },
+  "author": "Ciarra Murphy, Brian Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BFWThomas/CS340_Group96/issues"
+  },
+  "homepage": "https://github.com/BFWThomas/CS340_Group96#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1"
+  }
+}

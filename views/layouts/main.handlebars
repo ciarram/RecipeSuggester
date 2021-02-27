@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Recipe Suggestions</title>
+    <meta name="author" content="Ciarra Murphy & Brian Thomas">
+    <link rel="stylesheet" href="styles/style.css">
+	<title>Recipe Suggestions</title>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    {{#each jsscripts}}
+    <script src="/static/{{this}}"></script>
+    {{/each}}
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="new-user"><li>New User</li></a>
+            <a href="user"><li>Existing User</li></a>
+            <a href="ingredients"><li>Manage Ingredients</li></a>
+            <a href="user-ingredients"><li>Manage User Ingredients</li></a>
+            <a href="new-user-ingredients"><li>New User Ingredients</li></a>
+            <a href="recipes"><li>Recipes</li></a>
+            <a href="favorites"><li>Favorites</li></a>
+        </ul>
+    </nav>
+    <h1>Recipe Suggestions</h1>
+    <h2>Group 96</h2>
+    <div class="content">
+	    {{{body}}}
+    </div>
+</body>
+</html>

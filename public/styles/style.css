@@ -1,0 +1,23 @@
+h1, h2{
+    text-align: center;
+}
+nav{
+    padding:5px;
+    background-color: rgb(240, 213, 178);
+}
+li{
+    display: inline;
+    padding: 5px;
+}
+.recipe-header{
+    padding: 10px;
+}
+.favorite-header{
+    padding: 5px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}

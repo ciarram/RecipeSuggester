@@ -1,0 +1,15 @@
+ <h3>(User) Favorite Recipes</h3>
+    <table>
+    <thead> 
+        <th class="favorite-header">Recipe Name</th> 
+        <th class="favorite-header">Recipe Instructions</th> 
+    </thead> 
+    <tbody>
+        {{#each recipe}} 
+        <tr> 
+            <td>{{recipe_name}}</td> 
+            <td><button id="{{recipe_ID}}">Go to Recipe</button></td> 
+        </tr> 
+        {{/each}} 
+    </tbody> 
+</table> 

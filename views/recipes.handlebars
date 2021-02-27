@@ -1,0 +1,38 @@
+<html>
+    
+    <form id="find_recipe" action='' method=''>
+        <fieldset>
+            <legend>Search through the list of Recipes</legend>
+            <label for="searchrecipe">Recipe Name</label>
+            <input type="text" id="recipe_name" name="recipe_name" value=''><br>
+            <br>
+            <input type="submit" value="Submit" onclick="searchRecipeByFirstName()">
+        </fieldset>
+    </form>
+
+    <h3>Your Recipe Search Results:</h3>
+    <table>
+        <thead>
+            <th class="recipe-header">Recipe Name</th>
+            <th class="recipe-header">Description</th>
+            <th class="recipe-header">Type</th>
+            <th class="recipe-header">Source</th>
+            <th class="recipe-header">Prep Time</th>
+            <th class="recipe-header">Cook Time</th>
+        </thead>
+        <tbody>
+            {{#each recipes}}
+            <tr>
+                <td>{{this.recipe_name}}</td>
+                <td>{{this.recipe_description}}</td>
+                <td>{{this.recipe_type}}</td>
+                <td>{{this.recipe_origin}}</td>
+                <td>{{this.prep_time}}</td>
+                <td>{{this.cook_time}}</td>
+                <td><button>Add to Favorites</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+        
+</html>
